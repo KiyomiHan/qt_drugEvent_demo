@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>806</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#centralWidget{
+background:rgb(209, 222, 212)}</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>40</y>
+      <width>16</width>
+      <height>591</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>40</y>
+      <width>16</width>
+      <height>591</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="run_pushButton">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>600</y>
+      <width>113</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border: 0px solid white;
+border-right: 1px solid rgb(71, 94, 75);
+border-bottom: 1px solid  rgb(71, 94, 75,80);
+background-color: rgb(182, 219, 136);
+color:rgb(78, 108, 26);
+border-radius: 4px;
+}
+QPushButton:hover{
+border: 0px solid white;
+border-right: 1px solid rgb(254, 209, 164);
+border-bottom: 1px solid rgb(254, 209, 164);
+background-color: rgb(223, 160, 109);
+color:rgb(145, 81, 68);
+border-radius: 4px;
+}
+QPushButton:checked{
+border: 0px solid white;
+background-color: rgb(223, 160, 109);
+color:rgb(145, 81, 68);
+border-radius: 4px;
+}</string>
+    </property>
+    <property name="text">
+     <string>运行</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="tool_widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>639</x>
+      <y>40</y>
+      <width>151</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2"/>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>40</y>
+      <width>291</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QScrollArea{
+border-radius: 5px;
+border: 1.5px solid rgb(189, 214, 192);
+
+}</string>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="comd_widget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>287</width>
+       <height>16777210</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>16777210</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget#comd_widget{
+background-image: url(:/bj/act_bj.jpg);
+}</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>301</width>
+      <height>591</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>240</y>
+      <width>151</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+background:rgb(255,255,255,50);
+color:white;
+border: 0px solide white;
+border-radius:5px;
+}
+</string>
+    </property>
+    <widget class="QWidget" name="verticalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>151</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QRadioButton" name="radioButton">
+        <property name="text">
+         <string>循环练习</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioButton_2">
+        <property name="text">
+         <string>条件句训练</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="mod_ptn">
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+border: 0px solid white;
+background-color:rgb(255, 250, 149,50);
+color: rgb(254, 177, 9);
+min-height:30px;
+}
+QPushButton:hover{
+border: 0px solid white;
+background-color: rgb(255, 254, 88,30);
+color:rgb(161, 115, 25);
+}</string>
+        </property>
+        <property name="text">
+         <string>进入</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="restart_ptn">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>600</y>
+      <width>113</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border: 0px solid white;
+background-color: rgb(179, 199, 181);
+color:rgb(78, 108, 26);
+border-radius: 4px;
+}
+QPushButton:hover{
+border: 0px solid white;
+background-color: rgb(223, 206, 188);
+color:rgb(148, 98, 72);
+border-radius: 4px;
+}</string>
+    </property>
+    <property name="text">
+     <string>重来</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clear_pushButton">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>600</y>
+      <width>113</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border: 0px solid white;
+background-color: rgb(179, 199, 181);
+color:rgb(78, 108, 26);
+border-radius: 4px;
+}
+QPushButton:hover{
+border: 0px solid white;
+background-color: rgb(223, 206, 188);
+color:rgb(148, 98, 72);
+border-radius: 4px;
+}</string>
+    </property>
+    <property name="text">
+     <string>清空版面</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="close_pushButton">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>5</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border: 0px solid rgb(158, 37, 35);
+border-right: 1px solid rgb(158, 37, 35);
+border-bottom: 1px solid rgb(158, 37, 35);
+background-color: rgb(226, 84, 79);
+color:rgb(255, 255, 255);
+border-radius: 4px;
+}
+QPushButton:hover{
+border: 0px solid white;
+background-color: rgb(254, 167, 130);
+color:rgb(145, 81, 68);
+border-radius: 4px;
+}</string>
+    </property>
+    <property name="text">
+     <string>x</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

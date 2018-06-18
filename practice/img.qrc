@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/">
+        <file>role/01.gif</file>
+        <file>bj/bj1.jpg</file>
+        <file>bj/bj0.jpg</file>
+        <file>bj/bj2.jpg</file>
+        <file>ui/act.png</file>
+        <file>ui/role.png</file>
+        <file>ui/re.png</file>
+        <file>role/02.gif</file>
+        <file>bj/act_bj.jpg</file>
+        <file>ui/role1_uncheck.png</file>
+        <file>ui/role1.png</file>
+        <file>ui/role2_uncheck.png</file>
+        <file>ui/role2.png</file>
+        <file>ui/apple.png</file>
+        <file>ui/princess.png</file>
+        <file>ui/get_apple.gif</file>
+        <file>ui/choosen_princess.gif</file>
+        <file>ui/message_apple.png</file>
+        <file>ui/message_princess.png</file>
+        <file>ui/finish.png</file>
+    </qresource>
+</RCC>

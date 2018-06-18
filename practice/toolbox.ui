@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>toolbox</class>
+ <widget class="QWidget" name="toolbox">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>151</width>
+    <height>551</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QScrollArea" name="tool_scrollArea">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>151</width>
+     <height>551</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget{
+font: 16pt &quot;Wawati SC&quot;;
+}
+QWidget#tool_scrollArea{
+border: 1px solid rgb(141, 195, 163);
+border-radius: 5px;
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 10px 10px;
+}
+
+QGroupBox::indicator {
+    width: 13px;
+    height: 13px;
+}
+
+QGroupBox::indicator:unchecked {
+    image: url(:/images/checkbox.png);
+}
+QWidget#scrollAreaWidgetContents{
+
+background-color:rgb(240, 244, 228,90);
+}</string>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>289</width>
+      <height>1677721</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>289</width>
+      <height>1677721</height>
+     </size>
+    </property>
+    <widget class="QGroupBox" name="act_gbox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>230</y>
+       <width>131</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox {
+    border: 1px solid rgb(147, 185, 94);
+    border-radius: 5px;
+    margin-top: 20px;
+    color: rgb(147, 185, 94);
+    background-color:  rgb(147, 185, 94,50);
+}
+QWidget{
+    color:rgb(147, 185, 94);
+}
+QPushButton{
+border: 0px solid white;
+background-color: rgb(182, 219, 136);
+color:rgb(78, 108, 26);
+border-radius: 4px;
+}
+QPushButton:hover{
+border: 0px solid white;
+background-color: rgb(223, 160, 109);
+color:rgb(145, 81, 68);
+border-radius: 4px;
+}
+QPushButton:checked{
+border: 0px solid white;
+background-color: rgb(223, 160, 109);
+color:rgb(145, 81, 68);
+border-radius: 4px;
+}</string>
+     </property>
+     <property name="title">
+      <string>行动吧</string>
+     </property>
+     <widget class="QPushButton" name="right_ptn">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>70</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>d</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="left_ptn">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>a</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="down_ptn">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>70</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>s</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="up_ptn">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>30</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>w</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="re_gbox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>360</y>
+       <width>131</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox {
+    border: 1px solid rgb(135, 184, 238);
+    border-radius: 5px;
+    margin-top: 20px;
+    color:  rgb(254, 193, 58);
+background-color: rgb(135, 184, 238,30);
+}
+QWidget{
+    color:  rgb(135, 184, 238);
+}
+QLineEdit{
+      border: 1px solid  rgb(135, 184, 238);
+      border-radius: 3px;
+      background-color: rgb(135, 184, 238,30);
+}
+QLineEdit:hover{
+      border: 1px solid rgb(254, 234, 78);
+      border-radius: 3px;
+      background-color:rgb(215, 191, 118,50);
+}
+</string>
+     </property>
+     <property name="title">
+      <string>循环</string>
+     </property>
+     <widget class="QLineEdit" name="recount_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>113</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="inputMask">
+       <string>0000</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="role_gbox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>131</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox {
+    border: 1px solid rgb(174, 155, 204);
+    border-radius: 5px;
+    margin-top: 20px;
+    color: rgb(174, 155, 204);
+    background-color: rgb(174, 155, 204,50);
+}
+QWidget{
+color: rgb(174, 155, 204);
+}</string>
+     </property>
+     <property name="title">
+      <string>选定角色</string>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+     <widget class="QRadioButton" name="role1_radioButton">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QRadioButton::indicator{
+width: 30px;
+height:35px;
+}
+QRadioButton::indicator::checked{
+image:url(:/ui/role1.png);
+}
+QRadioButton::indicator::unchecked{
+image:url(:/ui/role1_uncheck.png)
+}</string>
+      </property>
+      <property name="text">
+       <string>皮宝宝</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="role2_radioButton">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QRadioButton::indicator{
+width: 30px;
+height:35px;
+}
+QRadioButton::indicator::checked{
+image:url(:/ui/role2.png);
+}
+QRadioButton::indicator::unchecked{
+image:url(:/ui/role2_uncheck.png);
+}</string>
+      </property>
+      <property name="text">
+       <string>龙猫</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
